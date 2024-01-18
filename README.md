@@ -1,0 +1,50 @@
+Code for the paper "Modular Adaptation of Multilingual Encoders to Written Swiss German Dialect"
+
+**[Blog post](https://vamvas.ch/swiss-german-encoder)**
+
+List of models released for this paper:
+* [hf.co/ZurichNLP/swissbert](https://hf.co/ZurichNLP/swissbert)
+* [hf.co/ZurichNLP/swiss-german-xlm-roberta-base](https://hf.co/ZurichNLP/swiss-german-xlm-roberta-base)
+* [hf.co/ZurichNLP/swiss-german-canine](https://hf.co/ZurichNLP/swiss-german-canine)
+* [hf.co/ZurichNLP/swiss-german-swissbert-char](https://hf.co/ZurichNLP/swiss-german-swissbert-char)
+
+
+## Installation
+
+- Requirements: Python >= 3.8, PyTorch
+- `pip install -r requirements.txt`
+
+## Continued Pre-training
+
+### Data
+
+- Not all the data we used are publicly available. See `data/README.md` for details.
+- `python -m scripts.preprocess_continued_pretraining_data`
+
+### Training
+
+- Subword level: `python -m scripts.continued_pretraining_subword <model_name_or_path>`
+  - Tested with `xlm-roberta-base`, `facebook/xmod-base`, `ZurichNLP/swissbert`
+- Character level: `python -m scripts.continued_pretraining_char <model_name_or_path>`
+  - Tested with `google/canine-s`, `facebook/xmod-base`, `ZurichNLP/swissbert` (the latter two correspond to the GLOBI approach described in Section 4.3 of the paper)
+
+## Evaluation
+
+### Data
+- See `data/README.md` for instructions on how to download the data.
+
+### Fine-tuning and testing
+
+- Part-of-speech tagging: `python -m scripts.evaluate_pos <model_name_or_path>`
+- German dialect identification: `python -m scripts.evaluate_gdi <model_name_or_path>`
+- Retrieval (no fine-tuning): `python -m scripts.evaluate_retrieval <model_name_or_path>`
+
+## License
+- This code repository: MIT license
+- Model weights: Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+## Citation
+
+```bibtex
+tba
+```
