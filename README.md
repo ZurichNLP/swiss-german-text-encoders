@@ -4,6 +4,8 @@ Code for the paper "Modular Adaptation of Multilingual Encoders to Written Swiss
 
 List of models released for this paper:
 * [hf.co/ZurichNLP/swissbert](https://hf.co/ZurichNLP/swissbert)
+  * this paper adds a Swiss German adapter
+  * the original version of SwissBERT is accessible at [model revision v1](https://huggingface.co/ZurichNLP/swissbert/tree/v1))
 * [hf.co/ZurichNLP/swiss-german-xlm-roberta-base](https://hf.co/ZurichNLP/swiss-german-xlm-roberta-base)
 * [hf.co/ZurichNLP/swiss-german-canine](https://hf.co/ZurichNLP/swiss-german-canine)
 * [hf.co/ZurichNLP/swiss-german-swissbert-char](https://hf.co/ZurichNLP/swiss-german-swissbert-char)
@@ -46,5 +48,10 @@ List of models released for this paper:
 ## Citation
 
 ```bibtex
-tba
+@inproceedings{vamvas-etal-2024-modular,
+	title={Modular Adaptation of Multilingual Encoders to Written Swiss German Dialect},
+	author={Jannis Vamvas and No{\"e}mi Aepli and Rico Sennrich},
+	booktitle={First Workshop on Modular and Open Multilingual NLP},
+	year={2024},
+}
 ```
