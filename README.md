@@ -1,4 +1,4 @@
-Code for the paper "Modular Adaptation of Multilingual Encoders to Written Swiss German Dialect"
+Code for the paper ["Modular Adaptation of Multilingual Encoders to Written Swiss German Dialect"](https://aclanthology.org/2024.moomin-1.3/)
 
 **[Blog post](https://vamvas.ch/swiss-german-encoder)**
 
@@ -49,9 +49,21 @@ List of models released for this paper:
 
 ```bibtex
 @inproceedings{vamvas-etal-2024-modular,
-	title={Modular Adaptation of Multilingual Encoders to Written Swiss German Dialect},
-	author={Jannis Vamvas and No{\"e}mi Aepli and Rico Sennrich},
-	booktitle={First Workshop on Modular and Open Multilingual NLP},
-	year={2024},
+    title = "Modular Adaptation of Multilingual Encoders to Written {S}wiss {G}erman Dialect",
+    author = {Vamvas, Jannis  and
+      Aepli, No{\"e}mi  and
+      Sennrich, Rico},
+    editor = {V{\'a}zquez, Ra{\'u}l  and
+      Mickus, Timothee  and
+      Tiedemann, J{\"o}rg  and
+      Vuli{\'c}, Ivan  and
+      {\"U}st{\"u}n, Ahmet},
+    booktitle = "Proceedings of the 1st Workshop on Modular and Open Multilingual NLP (MOOMIN 2024)",
+    month = mar,
+    year = "2024",
+    address = "St Julians, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.moomin-1.3",
+    pages = "16--23"
 }
 ```
